@@ -1,5 +1,10 @@
 /*
 
+for (let i = 2; i <=10; i += 2) {
+    console.log(i)
+}
+
+
 const fruits = ["apple", "banana", "orange", "grape"];
 
 for (let i = 0; i < fruits.length; i++) {
@@ -230,7 +235,7 @@ for (let i = numbers.length - 1; i >= 0; i--) {
 }
 
 -----------------------------------------------------------------
-*/
+
 
 const numbers = [5, 8, 12, 20, 25, 30];
 
@@ -240,4 +245,32 @@ for (let i = 0; i < numbers.length; i++) {
   }
 
   console.log(numbers[i]);
+}
+
+-------------------------------------------------------
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === 3) {
+    continue;
+  }
+
+  console.log(numbers[i]);
+}
+
+---------------------------------------------------------------
+
+*/
+
+const numbers = [5, 12, 8, 20, 3, 15, 7, 30];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 10) {
+    if (numbers[i] === 20) {
+      continue;
+    }
+    console.log(numbers[i]);
+  }
 }
